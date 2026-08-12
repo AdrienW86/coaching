@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
 
 const navigation = {
@@ -66,9 +67,14 @@ export function Footer() {
           {/* Colonne 1 : Branding + Newsletter */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 font-bold text-white">
-                LOGO
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Baptiste Rubens"
+                width={40}
+                height={40}
+                className="h-10 w-auto object-contain"
+                priority
+              />
               <span className="text-xl font-bold text-white">Baptiste Rubens</span>
             </Link>
 
