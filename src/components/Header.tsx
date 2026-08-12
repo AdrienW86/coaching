@@ -19,8 +19,8 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
         
-        {/* Emplacement du Logo */}
-        <div className="flex">
+        {/* Emplacement du Logo + Titre bicolore */}
+        <div className="flex items-center">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
             <Image
               src="/logo.png"
@@ -30,8 +30,8 @@ export function Header() {
               className="h-10 w-auto object-contain"
               priority
             />
-            <span className="font-bold text-slate-900 hidden sm:inline-block">
-              Baptiste Rubens
+            <span className="text-lg font-extrabold tracking-tight text-slate-900">
+              Baptiste <span className="text-indigo-600">Rubens</span>
             </span>
           </Link>
         </div>

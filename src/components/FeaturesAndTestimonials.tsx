@@ -16,7 +16,7 @@ const coachingServices = [
   },
   {
     title: "Programme Mastermind",
-    description: "6 mois d'accompagnement en groupe (6 pers max) pour structurer ton offre et automatiser ton acquisition.",
+    description: "3 mois d'accompagnement en groupe (6 pers max) pour structurer ton offre et automatiser ton acquisition.",
     icon: CheckCircle2,
     price: "2490€",
     href: "/mastermind",
